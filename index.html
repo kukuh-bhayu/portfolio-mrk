@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrK - All IT Solution | Portfolio Kukuh Bhayu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --mrk-blue: #2281a8; /* Warna biru dari logo */
+            --mrk-dark: #333333; /* Warna abu-abu gelap dari logo */
+        }
+        .bg-mrk-blue { background-color: var(--mrk-blue); }
+        .text-mrk-blue { color: var(--mrk-blue); }
+        .border-mrk-blue { border-color: var(--mrk-blue); }
+        
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <!-- Placeholder untuk Logo MrK -->
+                <div class="w-10 h-10 bg-mrk-blue rounded flex items-center justify-center text-white font-bold text-xl">K</div>
+                <span class="text-xl font-bold tracking-tight text-mrk-blue">MrK <span class="text-gray-600 font-light">All IT Solution</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-mrk-blue transition">Beranda</a>
+                <a href="#services" class="hover:text-mrk-blue transition">Layanan</a>
+                <a href="#experience" class="hover:text-mrk-blue transition">Pengalaman</a>
+                <a href="#contact" class="px-4 py-2 bg-mrk-blue text-white rounded-lg hover:bg-opacity-90 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-2/3">
+                <h2 class="text-mrk-blue font-semibold tracking-widest uppercase mb-2">Freelance Professional</h2>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+                    Solusi IT Terpadu untuk <br><span class="text-mrk-blue">Masa Depan Digital Anda.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-xl">
+                    Halo, saya <strong>Kukuh Bhayu Bramastya, S.T.</strong> Ahli IT dengan pengalaman luas di bidang jaringan, coding, hingga produksi kreatif digital.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-mrk-blue text-white px-8 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">Mulai Proyek</a>
+                    <a href="#experience" class="bg-white border border-gray-300 text-gray-700 px-8 py-3 rounded-full font-bold hover:bg-gray-50 transition">Lihat Portofolio</a>
+                </div>
+            </div>
+            <div class="md:w-1/3 mt-12 md:mt-0 flex justify-center">
+                <div class="relative w-64 h-64">
+                    <div class="absolute inset-0 bg-mrk-blue rounded-full opacity-10 animate-pulse"></div>
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Kukuh" alt="Kukuh Profile" class="rounded-full border-4 border-white shadow-2xl relative z-10 bg-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">Layanan <span class="text-mrk-blue">MrK</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition border-b-4 border-mrk-blue">
+                    <div class="w-16 h-16 bg-blue-100 text-mrk-blue rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-network-wired text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Networking & Security</h3>
+                    <p class="text-gray-600 italic mb-2 text-sm">Mikrotik Networking Associate</p>
+                    <p class="text-gray-600 text-sm">Instalasi jaringan kantor, manajemen bandwidth, dan sistem keamanan CCTV.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition border-b-4 border-mrk-blue">
+                    <div class="w-16 h-16 bg-blue-100 text-mrk-blue rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Software & Coding</h3>
+                    <p class="text-gray-600 italic mb-2 text-sm">Python | ActionScript | HTML/CSS</p>
+                    <p class="text-gray-600 text-sm">Pembuatan otomasi, aplikasi pendidikan interaktif, dan simulasi robotik.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition border-b-4 border-mrk-blue">
+                    <div class="w-16 h-16 bg-blue-100 text-mrk-blue rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-gamepad text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Creative Digital</h3>
+                    <p class="text-gray-600 italic mb-2 text-sm">Game Dev & Video Editing</p>
+                    <p class="text-gray-600 text-sm">Pengembangan game 2D, animasi interaktif untuk mengajar, dan editing video profesional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- Work Experience -->
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-briefcase mr-3 text-mrk-blue"></i> Pengalaman Kerja
+                    </h2>
+                    <div class="space-y-8 border-l-2 border-gray-200 ml-4 pl-8 relative">
+                        <div>
+                            <span class="absolute -left-2 bg-mrk-blue w-4 h-4 rounded-full mt-1"></span>
+                            <h4 class="font-bold text-lg text-mrk-blue">Universitas Ma Chung Malang</h4>
+                            <p class="text-gray-500 text-sm">2021 - Sekarang</p>
+                            <ul class="mt-2 text-gray-600 space-y-1 list-disc ml-4">
+                                <li>Head of Computer Laboratory</li>
+                                <li>Coding Teacher for Intermediate School</li>
+                                <li>Income Generating Staff Admin (s/d 2023)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <span class="absolute -left-2 bg-gray-300 w-4 h-4 rounded-full mt-1"></span>
+                            <h4 class="font-bold text-lg text-gray-800">LKP Oxford Jember</h4>
+                            <p class="text-gray-500 text-sm">2013 - 2016</p>
+                            <p class="mt-1 text-gray-600">General Computer Class Trainer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Expertise & Skills -->
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-star mr-3 text-mrk-blue"></i> Sertifikasi & Skill
+                    </h2>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="mb-6">
+                            <h5 class="font-bold text-gray-700 mb-3 uppercase text-xs tracking-wider">Sertifikasi Utama</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-50 text-mrk-blue px-3 py-1 rounded-full text-sm font-semibold border border-blue-100">MS Office Specialist: Excel</span>
+                                <span class="bg-blue-50 text-mrk-blue px-3 py-1 rounded-full text-sm font-semibold border border-blue-100">Mikrotik Associate</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <h5 class="font-bold text-gray-700 mb-2 text-sm italic">Technical</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Google Cloud Workspace</li>
+                                    <li>• CCTV Specialist</li>
+                                    <li>• Accounting Digitalization</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-gray-700 mb-2 text-sm italic">Development</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• ActionScript Expert</li>
+                                    <li>• Python Programming</li>
+                                    <li>• HTML/CSS Classic</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-mrk-blue text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Siap Berkolaborasi?</h2>
+            <p class="text-blue-100 mb-12 max-w-2xl mx-auto">Apapun kebutuhan IT Anda, mulai dari instalasi jaringan hingga pengembangan media edukasi interaktif, MrK siap membantu.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <a href="https://wa.me/6281227800057" target="_blank" class="flex flex-col items-center p-6 bg-white bg-opacity-10 rounded-2xl hover:bg-opacity-20 transition">
+                    <i class="fab fa-whatsapp text-3xl mb-4"></i>
+                    <span class="font-bold">WhatsApp</span>
+                    <span class="text-sm opacity-80">0812 2780 0057</span>
+                </a>
+                <a href="mailto:kukuh.bhayu@machung.ac.id" class="flex flex-col items-center p-6 bg-white bg-opacity-10 rounded-2xl hover:bg-opacity-20 transition">
+                    <i class="far fa-envelope text-3xl mb-4"></i>
+                    <span class="font-bold">Email</span>
+                    <span class="text-sm opacity-80 underline">kukuh.bhayu@machung.ac.id</span>
+                </a>
+                <a href="https://www.linkedin.com/in/kukuhbhayu" target="_blank" class="flex flex-col items-center p-6 bg-white bg-opacity-10 rounded-2xl hover:bg-opacity-20 transition">
+                    <i class="fab fa-linkedin text-3xl mb-4"></i>
+                    <span class="font-bold">LinkedIn</span>
+                    <span class="text-sm opacity-80">Kukuh Bhayu</span>
+                </a>
+            </div>
+            
+            <p class="mt-16 text-sm opacity-60">
+                Jl Joyosari 11, Merjosari, Lowokwaru Malang<br>
+                &copy; 2025 MrK All IT Solution.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
